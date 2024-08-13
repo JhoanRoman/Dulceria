@@ -1,38 +1,30 @@
 import React, { useState } from 'react';
-import '../styles/auth.css'; // Asegúrate de la ruta correcta
 
-const Register = ({ onRegister, onSwitchToLogin }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const Register = () => {
+  const [userType, setUserType] = useState('Customer');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Simular el registro, debes reemplazar esto con tu lógica de registro
-    const userData = { email };
-    onRegister(userData);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Aquí iría la lógica para registrar un usuario
+    console.log('Registro completado');
   };
 
   return (
-    <div className="auth-container">
-      <h2>Registrarse</h2>
+    <div className="register">
+      <h2>Registro</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Correo electrónico"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+        <label>
+          Tipo de usuario:
+          <select value={userType} onChange={(e) => setUserType(e.target.value)}>
+            <option value="Customer">Cliente</option>
+            <option value="Vendor">Proveedor</option>
+          </select>
+        </label>
+        <input type="text" placeholder="Nombre" required />
+        <input type="email" placeholder="Correo" required />
+        <input type="password" placeholder="Contraseña" required />
         <button type="submit">Registrarse</button>
       </form>
-      <p>Ya tienes una cuenta? <button onClick={onSwitchToLogin}>Inicia Sesión</button></p>
     </div>
   );
 };

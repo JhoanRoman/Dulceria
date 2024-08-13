@@ -1,0 +1,33 @@
+/* src/components/FilterBar.css */
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para el área de filtros */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .filter-bar select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f8f8f8; /* Fondo ligero para los selectores */
+  }
+  
+  .filter-bar select:focus {
+    border-color: #ff6f61; /* Color de borde cuando está enfocado */
+    outline: none; /* Eliminar el contorno predeterminado */
+  }
+  
+  .filter-bar select option {
+    padding: 10px;
+  }
+  
+  .filter-bar select:hover {
+    background-color: #e0e0e0; /* Fondo ligeramente más oscuro al pasar el cursor */
+  }
+  
