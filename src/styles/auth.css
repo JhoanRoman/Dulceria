@@ -1,0 +1,68 @@
+/* auth.css */
+
+/* Estilo general para los formularios */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Estilo para los títulos de los formularios */
+  .auth-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Estilo para los campos de entrada */
+  .auth-container input[type="email"],
+  .auth-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para el botón de envío */
+  .auth-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo para el botón de envío al pasar el mouse */
+  .auth-container button:hover {
+    background-color: #4cae4c;
+  }
+  
+  /* Estilo para el texto de cambio de formulario */
+  .auth-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .auth-container p button {
+    border: none;
+    background: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .auth-container p button:hover {
+    text-decoration: underline;
+  }
+  

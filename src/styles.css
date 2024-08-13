@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  color: #ff6600;
+}
+
+h3 {
+  color: #ff6600;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffcc00;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header nav {
+  margin-top: 10px;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header li {
+  display: inline;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Product List Styles */
+.product-list {
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Form Styles */
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #cc5200;
+}
+
+/* FAQ Styles */
+.faq-item {
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-item h3 {
+  margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer a {
+  margin: 0 10px;
+}
